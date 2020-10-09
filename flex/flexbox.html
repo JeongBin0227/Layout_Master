@@ -2,9 +2,14 @@
 <html>
 <head>
   <style>
-    body{
+    .wrapper{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        /* Main Axis */
+        justify-content: space-around;
+        /* Cross Axis */
+        align-items: center;
+        heigth: 100vh
     }
     .box{
       background-color: peru;
@@ -15,8 +20,10 @@
   </style>
 </head>
 <body>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
+  <div class="wrapper">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
 </body>
 </html>
