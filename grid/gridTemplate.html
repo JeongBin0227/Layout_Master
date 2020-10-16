@@ -5,17 +5,19 @@
   <style>
     .grid{
         display: grid;
-        gap:10px;
+        gap:5px;
         height: 50vh;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,1fr); 
+        grid-template-columns: repeat(4,100px);
+        grid-template-rows: repeat(4,100px); 
         /* grid-template: 
         "header header header header" 1fr
         "content content content nav" 1fr
         "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr; */
         /* justify-items: center;
         align-items: stretch; */
-        place-items: stretch center;
+        /* place-items: stretch center; */
+        justify-content:center;
+        align-content:center
     }
     .header{
         background-color:yellowgreen;
