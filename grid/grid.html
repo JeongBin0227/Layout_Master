@@ -5,7 +5,9 @@
   <style>
     .grid{
         display: grid;
-        grid-template-columns: repeat(4,100px);
+        gap:10px;
+        /* grid-template-columns: repeat(4,100px); */
+        grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line] 100px;
         grid-template-rows: repeat(4,100px);
         
     }
@@ -13,7 +15,8 @@
         background-color:yellowgreen;
         /* grid-column-start:1;
         grid-column-end:5; */
-        grid-column : 1/5
+        /* grid-column : 1/5 */
+        grid-column : first-line/5
 
     }
     .content{
