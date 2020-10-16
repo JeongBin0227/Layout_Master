@@ -7,28 +7,31 @@
         display: grid;
         gap:10px;
         height: 50vh;
-        /* grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,1fr); */
-        grid-template: 
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr); 
+        /* grid-template: 
         "header header header header" 1fr
-        "content content content nav" 2fr
-        "footer footer footer footer" 1fr / 2fr 2fr 1fr 1fr
+        "content content content nav" 1fr
+        "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr; */
+        /* justify-items: center;
+        align-items: stretch; */
+        place-items: stretch center;
     }
     .header{
         background-color:yellowgreen;
-        grid-area: header;
+        /* grid-area: header; */
     }
     .content{
         background-color:coral;
-        grid-area: content;
+        /* grid-area: content; */
     }
     .nav{
         background-color:cornflowerblue;
-        grid-area: nav;
+        /* grid-area: nav; */
     }
     .footer{
         background-color:violet;
-        grid-area: footer;
+        /* grid-area: footer; */
     }
   </style>
 </head>
