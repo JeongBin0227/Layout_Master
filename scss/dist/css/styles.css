@@ -1,13 +1,1 @@
-a:nth-child(even),
-a:nth-child(odd) {
-  text-decoration: none;
-  display: block;
-  color: #00f;
-  font-weight: 700;
-  font-size: 100;
-}
-a:nth-child(even) {
-  color: red;
-  font-weight: lighter;
-  font-size: 200;
-}
+a,button{border-radius:7px;font-size:12px;text-transform:uppercase;padding:5px 10px;background-color:peru;color:#fff;font-weight:500;font-style:inherit}a{-webkit-text-decoration:node;text-decoration:node}button{border:0}

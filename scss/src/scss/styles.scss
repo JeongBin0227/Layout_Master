@@ -1,10 +1,9 @@
 @import '_variables';
 @import '_mixins';
-
+@import '_buttons';
 // h1 {
 //   color: $bg;
 // }
-
 // .box {
 //   margin-top: 20px;
 //   &:hover {
@@ -14,15 +13,23 @@
 //     color: blue;
 //   }
 // }
-
 // .box button {
 //   color: red;
 // }
 
-a:nth-child(odd) {
-  @include link(blue, odd, 100);
-}
+// a: nth-child(odd) {
+//   @include link(blue, odd, 100);
+// }
 
-a:nth-child(even) {
-  @include link(red, even, 200);
+// a:nth-child(even) {
+//   @include link(red, even, 200);
+// }
+
+a {
+  @extend %button;
+  text-decoration: node;
+}
+button {
+  @extend %button;
+  border: none;
 }
