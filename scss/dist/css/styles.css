@@ -1,1 +1,13 @@
-.box button,h1{color:red}.box{margin-top:20px}.box:hover{background-color:green}.box h2{color:#00f}
+a:nth-child(even),
+a:nth-child(odd) {
+  text-decoration: none;
+  display: block;
+  color: #00f;
+  font-weight: 700;
+  font-size: 100;
+}
+a:nth-child(even) {
+  color: red;
+  font-weight: lighter;
+  font-size: 200;
+}

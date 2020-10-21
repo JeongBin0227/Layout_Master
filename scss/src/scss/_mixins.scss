@@ -1,0 +1,11 @@
+@mixin link($color, $word, $size) {
+  text-decoration: none;
+  display: block;
+  color: $color;
+  @if $word == 'odd' {
+    font-weight: bold;
+  } @else {
+    font-weight: lighter;
+  }
+  font-size: $size;
+}
