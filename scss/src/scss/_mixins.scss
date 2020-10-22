@@ -1,37 +1,11 @@
-// @mixin link($color, $word, $size) {
-//   text-decoration: none;
-//   display: block;
-//   color: $color;
-//   @if $word == 'odd' {
-//     font-weight: bold;
-//   } @else {
-//     font-weight: lighter;
-//   }
-//   font-size: $size;
-// }
-$minIphone: 500px;
-$maxIphone: 690px;
-$minTablet: $maxIphone + 1;
-$maxTablet: 1120px;
-
-@mixin responsive($device) {
-  @if $device == 'iphone' {
-    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) {
-      @content;
-    }
-  } @else if $device == 'tablet' {
-    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
-      @content;
-    }
-  } @else if $device == 'iphone-l' {
-    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) and (orientation: landscape) {
-      @content;
-    }
-  } @else if $device == 'ipad-l' {
-    @media screen and (max-width: ) and (orientation: landscape) {
-      @content;
-    }
+@mixin link($color, $word, $size) {
+  text-decoration: none;
+  display: block;
+  color: $color;
+  @if $word == 'odd' {
+    font-weight: bold;
+  } @else {
+    font-weight: lighter;
   }
-  color: blue;
-  @content;
+  font-size: $size;
 }

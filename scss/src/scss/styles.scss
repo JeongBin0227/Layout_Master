@@ -25,24 +25,11 @@
 //   @include link(red, even, 200);
 // }
 
-// a {
-//   @extend %button;
-//   text-decoration: node;
-// }
-// button {
-//   @extend %button;
-//   border: none;
-// }
-
-h1 {
-  color: red;
-  @include responsive('iphone') {
-    color: yellow;
-  }
-  @include responsive('iphone-l') {
-    font-style: 60px;
-  }
-  @include responsive('tablet') {
-    color: green;
-  }
+a {
+  @extend %button;
+  text-decoration: node;
+}
+button {
+  @extend %button;
+  border: none;
 }
