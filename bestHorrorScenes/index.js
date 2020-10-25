@@ -10,7 +10,19 @@ const content = document.querySelector('.content');
 
 const makeMovies = (movie) => {
   let tmp = document.createElement('div');
-  tmp.innerHTML = movie.title;
+  tmp.classList.add('movie');
+  let title = document.createElement('h1');
+  title.classList.add('title');
+  title.innerHTML = movie.index + '. ' + movie.title + '( ' + movie.year + ' )';
+  tmp.appendChild(title);
+
+  let director = document.createElement('h3');
+  director.innerHTML = 'Directed by ' + movie.director;
+  tmp.appendChild(director);
+
+  let grade = document.createElement('h3');
+  grade.innerHTML = 'Do you agree? ' + movie.like + ', ' + movie.unLike;
+  tmp.appendChild(grade);
 
   return tmp;
 };
