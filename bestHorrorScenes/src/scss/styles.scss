@@ -14,14 +14,17 @@ body {
   width: 100%;
   color: red;
   .title {
+    padding: 10vh 0 72px 72px;
     font-size: 7.2rem;
   }
   .serveTitle {
+    padding: 50px 75px 75px 75px;
     font-size: 1.6em;
     line-height: 1.2;
     margin-bottom: 1em;
   }
   .explanation {
+    padding: 0px 75px 75px 75px;
     text-align: justify;
     text-indent: -0.5em;
   }
@@ -47,7 +50,7 @@ body {
 .movie {
   color: white;
   .title {
-    margin-left: 20%;
+    padding: 150px 0px 0px 150px;
     line-height: 1.2;
     padding-right: 1em;
     position: relative;

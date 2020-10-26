@@ -14,11 +14,17 @@ const makeMovies = (movie) => {
   let title = document.createElement('h1');
   title.classList.add('title');
   title.innerHTML = movie.index + '. ' + movie.title + '( ' + movie.year + ' )';
-  tmp.appendChild(title);
 
   let director = document.createElement('h3');
   director.innerHTML = 'Directed by ' + movie.director;
-  tmp.appendChild(director);
+  director.classList.add('director');
+
+  title.appendChild(director);
+
+  tmp.appendChild(title);
+
+  let video = document.createElement('video');
+  video.src = movie.url;
 
   let grade = document.createElement('h3');
   grade.innerHTML = 'Do you agree? ' + movie.like + ', ' + movie.unLike;
@@ -26,6 +32,8 @@ const makeMovies = (movie) => {
 
   return tmp;
 };
+
+//<video id="myVideo" src="movie.mp4" controls autoplay></video>
 
 movies.forEach((movie) => {
   content.appendChild(makeMovies(movie));
