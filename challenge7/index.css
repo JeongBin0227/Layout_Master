@@ -11,55 +11,125 @@ body {
   
 }
 .grid{
-    width: 95%;
-    height: 95%;
+    width: 96%;
+    height: 96%;
     display:grid;
-    grid-gap: 1%;
-    grid-template-columns: 5% 45% 45% 5%;
-    grid-template-rows:5% 90% 5%;
+    grid-template-columns: 5% 43% 43% 5%;
+    grid-template-rows:5% 86% 5%;
     background-color: orangered;
 }
 
 header{
+    display: inline-block;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+
+    margin:3px;
     background-color: white;
     color:orangered;
-    grid-column : 1/5;
+    grid-column : 1/6;
     grid-row : 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left{
     grid-column : 1/2;
-    grid-row : 2/3;
+    grid-row : 2/4;
+    margin:3px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 55% 30% 15%;
     background-color: white;
     color:orangered;
 }
+.left div{
+    writing-mode: vertical-rl;
+}
+.left div:nth-child(1){
+    writing-mode: vertical-rl;
+    background-color: orangered;
+    color: white;
+}
 .main{
-    grid-column : 2/4;
-    grid-row : 2/3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    grid-column : 2/5;
+    grid-row : 2/4;
+}
+.main .mainRight{
     background-color: goldenrod;
+}
+.main .mainLeft{
+    background-color: grey;
 }
 
 .right{
-    grid-column : 4/5;
-    grid-row : 2/3;
+    margin:3px;
+    display: grid;
+    justify-content: center;
+    grid-column : 5/6;
+    grid-row : 2/4;
     background-color: green;
     color:white;
+    grid-template-rows:50% 50%
+}
+.right p {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    writing-mode: vertical-rl;
+}
+.right p:nth-child(1) {
+    grid-row : 1/2;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    writing-mode: vertical-rl;
+    
 }
 footer{
+    display: inline-block;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    margin:3px;
     background-color: white;
     color:orangered;
-    grid-column : 1/5;
-    grid-row : 3/4;
+    grid-column : 1/6;
+    grid-row : 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mainBanner span{
-    font-size:30px;
-    font-weight: 500px;
+.mainBanner {
+    position:absolute;
+    bottom: 45%; 
+    right: 30%;
+    font-size:50px;
+    font-weight: 900;
     color:white;
 }
 .kakaoTalk{
+    position:absolute;
+    bottom: 4%; 
+    right: 4%;
     height: 40px;
     width: 40px;
     border-radius: 5px;
     background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: white;
 }
