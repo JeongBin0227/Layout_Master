@@ -42,16 +42,39 @@ header{
     justify-content: center;
     display: grid;
     grid-template-rows: 55% 30% 15%;
-    background-color: white;
-    color:orangered;
 }
-.left div{
+.left p {
+    display: flex;
+    align-items: center;
+    justify-self: center;
     writing-mode: vertical-rl;
 }
-.left div:nth-child(1){
-    writing-mode: vertical-rl;
+.leftTop{
+    margin-bottom: 5px;
     background-color: orangered;
     color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.leftCenter{
+    margin-bottom: 5px;
+    background-color: white;
+    color: orangered;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.leftBottom{
+    margin-bottom: 5px;
+    background-color: white;
+    color: orangered;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
 }
 .main{
     display: grid;
@@ -73,9 +96,23 @@ header{
     justify-content: center;
     grid-column : 5/6;
     grid-row : 2/4;
-    background-color: green;
     color:white;
     grid-template-rows:50% 50%
+}
+.rightTop{
+    margin-bottom: 5px;
+    background-color: green;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.rightBottom{
+    background-color: green;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
 }
 .right p {
     display: flex;
@@ -83,14 +120,7 @@ header{
     justify-self: center;
     writing-mode: vertical-rl;
 }
-.right p:nth-child(1) {
-    grid-row : 1/2;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    writing-mode: vertical-rl;
-    
-}
+
 footer{
     display: inline-block;
     white-space: nowrap; 
